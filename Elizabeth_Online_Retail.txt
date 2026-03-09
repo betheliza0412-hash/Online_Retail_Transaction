@@ -1,0 +1,73 @@
+New Measures – Sheet1
+
+Total Revenue
+
+Revenue = SUMX(Sheet1, Sheet1[Quantity] * Sheet1[UnitPrice])
+
+Total Orders
+
+Total Orders = COUNT(Sheet1[InvoiceNo])
+
+Total Quantity
+
+Total Quantity = SUM(Sheet1[Quantity])
+Dashboard
+1. RETAIL SALES OVERVIEW
+1. Line Chart (Monthly Revenue Trend)
+
+X → Invoice Date (Month)
+Y → Revenue
+
+2. Clustered Column Chart (Revenue by Country)
+
+X → Country
+Y → Revenue
+
+3. Card Visuals
+
+Total Revenue
+
+Total Orders
+
+Total Quantity
+
+4. New Slicer
+
+Country
+
+Product Description
+
+PRODUCT ANALYSIS
+1. Treemap (Revenue by Product)
+
+Category → Description
+Values → Revenue
+
+2. Line Chart
+
+X → Invoice Date
+Y → Quantity
+
+3. Stacked Column Chart
+
+X → Country
+Y → Revenue
+
+4. Line Chart
+
+X → Invoice Date
+Y → Revenue
+
+Clear Filters Button
+
+Go to
+
+Insert → Button → Blank
+
+Format → Action → Turn ON
+
+Type → Bookmark
+
+Create bookmark after clearing slicers and connect it to the button.
+
+This button resets all slicers and returns the dashboard to the default view.
